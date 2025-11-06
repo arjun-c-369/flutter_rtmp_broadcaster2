@@ -209,8 +209,8 @@ class CameraNativeView(
                 val size = streamingSize["size"] as Size
                 val bitrateRes = streamingSize["bitrate"] as Int
                 if (rtmpCamera.isRecording || rtmpCamera.prepareAudio() && rtmpCamera.prepareVideo(
-                        (size.width*0.2).toInt(),
-                        (size.height*0.2).toInt(),
+                        (size.width*0.6).toInt(),
+                        (size.height*0.6).toInt(),
                         bitrate ?: bitrateRes
                     )
                 ) {
